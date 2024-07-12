@@ -8,12 +8,27 @@
 * ------------------------------------------------------------
 */
 {
+  "order": [
+    "main",
+    "product-recommendations"
+  ],
   "sections": {
     "main": {
       "type": "main-product",
       "blocks": {
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
         "price": {
           "type": "price",
+          "settings": {
+          }
+        },
+        "tab": {
+          "type": "tab",
           "settings": {
           }
         },
@@ -21,17 +36,6 @@
           "type": "variant_picker",
           "settings": {
             "picker_type": "button"
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        },
-        "tab": {
-          "type": "tab",
-          "settings": {
           }
         }
       },
@@ -49,9 +53,5 @@
       "settings": {
       }
     }
-  },
-  "order": [
-    "main",
-    "product-recommendations"
-  ]
+  }
 }
